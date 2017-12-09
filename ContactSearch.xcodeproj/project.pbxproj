@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37809D331FDBD919006EA1AB /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37809D321FDBD919006EA1AB /* ContactsManager.swift */; };
 		37CEDE681FDBBA5A00DE1C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CEDE671FDBBA5A00DE1C3D /* AppDelegate.swift */; };
-		37CEDE6A1FDBBA5A00DE1C3D /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CEDE691FDBBA5A00DE1C3D /* ContactsViewController.swift */; };
+		37CEDE6A1FDBBA5A00DE1C3D /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CEDE691FDBBA5A00DE1C3D /* ContactsListViewController.swift */; };
 		37CEDE6D1FDBBA5A00DE1C3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37CEDE6B1FDBBA5A00DE1C3D /* Main.storyboard */; };
 		37CEDE701FDBBA5B00DE1C3D /* ContactSearch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37CEDE6E1FDBBA5B00DE1C3D /* ContactSearch.xcdatamodeld */; };
 		37CEDE721FDBBA5B00DE1C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37CEDE711FDBBA5B00DE1C3D /* Assets.xcassets */; };
@@ -26,9 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37809D321FDBD919006EA1AB /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
 		37CEDE641FDBBA5A00DE1C3D /* ContactSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CEDE671FDBBA5A00DE1C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		37CEDE691FDBBA5A00DE1C3D /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		37CEDE691FDBBA5A00DE1C3D /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 		37CEDE6C1FDBBA5A00DE1C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37CEDE6F1FDBBA5B00DE1C3D /* ContactSearch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContactSearch.xcdatamodel; sourceTree = "<group>"; };
 		37CEDE711FDBBA5B00DE1C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,7 +96,7 @@
 		37CEDE7C1FDBBAF800DE1C3D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				37CEDE691FDBBA5A00DE1C3D /* ContactsViewController.swift */,
+				37CEDE691FDBBA5A00DE1C3D /* ContactsListViewController.swift */,
 				37CEDE8B1FDBBBC100DE1C3D /* AddContactViewController.swift */,
 				37CEDE8D1FDBBBC900DE1C3D /* DetailViewController.swift */,
 			);
@@ -113,6 +115,7 @@
 			children = (
 				37CEDE871FDBBB6F00DE1C3D /* Utility.swift */,
 				37CEDE891FDBBB7C00DE1C3D /* Protocols.swift */,
+				37809D321FDBD919006EA1AB /* ContactsManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -210,11 +213,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				37CEDE881FDBBB6F00DE1C3D /* Utility.swift in Sources */,
-				37CEDE6A1FDBBA5A00DE1C3D /* ContactsViewController.swift in Sources */,
+				37CEDE6A1FDBBA5A00DE1C3D /* ContactsListViewController.swift in Sources */,
 				37CEDE701FDBBA5B00DE1C3D /* ContactSearch.xcdatamodeld in Sources */,
 				37CEDE8C1FDBBBC100DE1C3D /* AddContactViewController.swift in Sources */,
 				37CEDE901FDBBBE300DE1C3D /* ContactListCell.swift in Sources */,
 				37CEDE921FDBBBF000DE1C3D /* ContactDetailCell.swift in Sources */,
+				37809D331FDBD919006EA1AB /* ContactsManager.swift in Sources */,
 				37CEDE861FDBBB5D00DE1C3D /* StringConstants.swift in Sources */,
 				37CEDE681FDBBA5A00DE1C3D /* AppDelegate.swift in Sources */,
 				37CEDE821FDBBB3F00DE1C3D /* StoryboardID.swift in Sources */,

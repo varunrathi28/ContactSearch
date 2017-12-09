@@ -9,9 +9,14 @@
 import UIKit
 
 class ContactDetailCell: UITableViewCell {
+    
+    @IBOutlet weak var lblDetailTitle:UILabel!
+    @IBOutlet weak var lblDetaiDesciption:UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+       
         // Initialization code
     }
 

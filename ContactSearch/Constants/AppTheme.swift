@@ -6,4 +6,10 @@
 //  Copyright © 2017 vrat28. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct AppTheme {
+    
+    static let backgroundColor:UIColor = UIColor.lightGray
+    
+}
