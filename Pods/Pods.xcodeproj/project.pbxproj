@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08954A613F688183FF6B887BB7CA65FE /* GSKStretchyHeaderView+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D41910461B9736DBB1C214D19FDF761 /* GSKStretchyHeaderView+Protected.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		0E5478071AE5BB29EBD89B2E88600554 /* UIView+GSKTransplantSubviews.h in Headers */ = {isa = PBXBuildFile; fileRef = B18F48084CBA55C1556C38BFC38A060D /* UIView+GSKTransplantSubviews.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FA396080BDE3E9D7A6CEE7B1EE3DE2A /* GSKStretchyHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5022C497205BD6B4AEB39CCEFF233458 /* GSKStretchyHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B611D5A4E00C95BA2EA5AB168BAE5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4B79792D0632E31944DD9A054A27DCD8 /* GSKStretchyHeaderView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83252F20437A90481CE928E0F761A27F /* GSKStretchyHeaderView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57D3672F8C1C3D3F673F16CD425F7CDC /* UIScrollView+GSKStretchyHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 954B133337AA514835DDF6C8E2AAB5C3 /* UIScrollView+GSKStretchyHeaderView.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		5898FFC220ECBAC4DE5D237B4097B235 /* GSKStretchyHeaderView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0861CB6024479E66F6BCF0C5DEABA6C3 /* GSKStretchyHeaderView-dummy.m */; };
+		81B6B491A68487B0B7EDBCB00E3C0825 /* UIScrollView+GSKStretchyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 131A4E3582CC03F55AB25BF2D17D77B5 /* UIScrollView+GSKStretchyHeaderView.m */; };
+		8730611B1ABD80B09DEE7C874B337252 /* GSKGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 58EE0DA8018E93B6F0BC7F3CBA075309 /* GSKGeometry.c */; };
+		8C66F71EBDB6416BC9836415A90D2393 /* Pods-ContactSearch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E6B24BD3A38686648660D2339147E1A /* Pods-ContactSearch-dummy.m */; };
+		91416763D5245B2AE7EFE626717C2EC2 /* GSKGeometry.h in Headers */ = {isa = PBXBuildFile; fileRef = FC85C339CBF915C770E72E4B1EABE8B2 /* GSKGeometry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961BD1A99F5C9CFEB95283362152844F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A82B3CC9980B706A2F0997C69020ECAA /* UIView+GSKTransplantSubviews.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E490095471D802357A2365C3FEC6499 /* UIView+GSKTransplantSubviews.m */; };
+		CA051BA6064156586A246E57946B7108 /* GSKStretchyHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC564EA9DA87539AC8111D9CA745FAA0 /* GSKStretchyHeaderView.m */; };
+		CC9D3AD616D66E472FA0E24071695713 /* Pods-ContactSearch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E234793E7424ADCAA652D8C80F08FB36 /* Pods-ContactSearch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E06A552D3D98433218B5AA4A557EC39E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD71ED72EACA0156F0B96DDE230F2138;
+			remoteInfo = GSKStretchyHeaderView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0861CB6024479E66F6BCF0C5DEABA6C3 /* GSKStretchyHeaderView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GSKStretchyHeaderView-dummy.m"; sourceTree = "<group>"; };
+		0E6B24BD3A38686648660D2339147E1A /* Pods-ContactSearch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ContactSearch-dummy.m"; sourceTree = "<group>"; };
+		131A4E3582CC03F55AB25BF2D17D77B5 /* UIScrollView+GSKStretchyHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIScrollView+GSKStretchyHeaderView.m"; path = "GSKStretchyHeaderView/Classes/Private/UIScrollView+GSKStretchyHeaderView.m"; sourceTree = "<group>"; };
+		13AA469DD9566FAD9BB8A597680F33B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D41910461B9736DBB1C214D19FDF761 /* GSKStretchyHeaderView+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GSKStretchyHeaderView+Protected.h"; path = "GSKStretchyHeaderView/Classes/Private/GSKStretchyHeaderView+Protected.h"; sourceTree = "<group>"; };
+		3B30EAB0FC94341CDE9126E495A49097 /* GSKStretchyHeaderView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSKStretchyHeaderView-prefix.pch"; sourceTree = "<group>"; };
+		3E490095471D802357A2365C3FEC6499 /* UIView+GSKTransplantSubviews.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+GSKTransplantSubviews.m"; path = "GSKStretchyHeaderView/Classes/UIView+GSKTransplantSubviews.m"; sourceTree = "<group>"; };
+		453E9F9402E306E10D57DE0ACDB058DE /* Pods-ContactSearch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContactSearch-frameworks.sh"; sourceTree = "<group>"; };
+		4B332F4CB82085D818D820A941033DDA /* GSKStretchyHeaderView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GSKStretchyHeaderView.framework; path = GSKStretchyHeaderView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5022C497205BD6B4AEB39CCEFF233458 /* GSKStretchyHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSKStretchyHeaderView.h; path = GSKStretchyHeaderView/Classes/GSKStretchyHeaderView.h; sourceTree = "<group>"; };
+		55A789D3CF16523F67A877E9B408E23F /* Pods-ContactSearch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ContactSearch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		57DA1E112D854D106B4A91AAEDE9850F /* Pods-ContactSearch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ContactSearch-resources.sh"; sourceTree = "<group>"; };
+		58EE0DA8018E93B6F0BC7F3CBA075309 /* GSKGeometry.c */ = {isa = PBXFileReference; includeInIndex = 1; name = GSKGeometry.c; path = GSKStretchyHeaderView/Classes/GSKGeometry.c; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6CC431D20A2BBD727E31F3A7416976C9 /* Pods-ContactSearch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ContactSearch.modulemap"; sourceTree = "<group>"; };
+		719BC2AA9B01EB2A9864A839AD3FDAAF /* GSKStretchyHeaderView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GSKStretchyHeaderView.xcconfig; sourceTree = "<group>"; };
+		83252F20437A90481CE928E0F761A27F /* GSKStretchyHeaderView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GSKStretchyHeaderView-umbrella.h"; sourceTree = "<group>"; };
+		8C2745B9B60DE2B77F1E34A6010161BC /* GSKStretchyHeaderView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = GSKStretchyHeaderView.modulemap; sourceTree = "<group>"; };
+		8F59B42CD2C97E8CEF63721D277D6A00 /* Pods_ContactSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ContactSearch.framework; path = "Pods-ContactSearch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		954B133337AA514835DDF6C8E2AAB5C3 /* UIScrollView+GSKStretchyHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+GSKStretchyHeaderView.h"; path = "GSKStretchyHeaderView/Classes/Private/UIScrollView+GSKStretchyHeaderView.h"; sourceTree = "<group>"; };
+		AB4EC59EA8CF741B30A32885660BFDAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC564EA9DA87539AC8111D9CA745FAA0 /* GSKStretchyHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GSKStretchyHeaderView.m; path = GSKStretchyHeaderView/Classes/GSKStretchyHeaderView.m; sourceTree = "<group>"; };
+		AE978A08E1D65333994EDD6A3D61E8FC /* Pods-ContactSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		B18F48084CBA55C1556C38BFC38A060D /* UIView+GSKTransplantSubviews.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+GSKTransplantSubviews.h"; path = "GSKStretchyHeaderView/Classes/UIView+GSKTransplantSubviews.h"; sourceTree = "<group>"; };
+		E234793E7424ADCAA652D8C80F08FB36 /* Pods-ContactSearch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ContactSearch-umbrella.h"; sourceTree = "<group>"; };
+		E9A3B997A8D06416FC03A4F441430DAB /* Pods-ContactSearch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ContactSearch-acknowledgements.plist"; sourceTree = "<group>"; };
+		FBBB71E0686E6D1798672AD2AA0DDFC5 /* Pods-ContactSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ContactSearch.release.xcconfig"; sourceTree = "<group>"; };
+		FC85C339CBF915C770E72E4B1EABE8B2 /* GSKGeometry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GSKGeometry.h; path = GSKStretchyHeaderView/Classes/GSKGeometry.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41CD338DE78554591BDD2C26FB925F34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B611D5A4E00C95BA2EA5AB168BAE5F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C05431C602AC130FC595EF06B8B76991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961BD1A99F5C9CFEB95283362152844F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0857AFD4C13A22DBC0E3F7D3A1C4F7D2 /* Pods-ContactSearch */ = {
+			isa = PBXGroup;
+			children = (
+				AB4EC59EA8CF741B30A32885660BFDAE /* Info.plist */,
+				6CC431D20A2BBD727E31F3A7416976C9 /* Pods-ContactSearch.modulemap */,
+				55A789D3CF16523F67A877E9B408E23F /* Pods-ContactSearch-acknowledgements.markdown */,
+				E9A3B997A8D06416FC03A4F441430DAB /* Pods-ContactSearch-acknowledgements.plist */,
+				0E6B24BD3A38686648660D2339147E1A /* Pods-ContactSearch-dummy.m */,
+				453E9F9402E306E10D57DE0ACDB058DE /* Pods-ContactSearch-frameworks.sh */,
+				57DA1E112D854D106B4A91AAEDE9850F /* Pods-ContactSearch-resources.sh */,
+				E234793E7424ADCAA652D8C80F08FB36 /* Pods-ContactSearch-umbrella.h */,
+				AE978A08E1D65333994EDD6A3D61E8FC /* Pods-ContactSearch.debug.xcconfig */,
+				FBBB71E0686E6D1798672AD2AA0DDFC5 /* Pods-ContactSearch.release.xcconfig */,
+			);
+			name = "Pods-ContactSearch";
+			path = "Target Support Files/Pods-ContactSearch";
+			sourceTree = "<group>";
+		};
+		0B36B676D1B001F2E4C5A28326F2AD09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1AAA1A9EDF02EFE967C6169C2F6D687A /* GSKStretchyHeaderView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0E2E54574D364ED27D95700535A67BAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B332F4CB82085D818D820A941033DDA /* GSKStretchyHeaderView.framework */,
+				8F59B42CD2C97E8CEF63721D277D6A00 /* Pods_ContactSearch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AAA1A9EDF02EFE967C6169C2F6D687A /* GSKStretchyHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				58EE0DA8018E93B6F0BC7F3CBA075309 /* GSKGeometry.c */,
+				FC85C339CBF915C770E72E4B1EABE8B2 /* GSKGeometry.h */,
+				5022C497205BD6B4AEB39CCEFF233458 /* GSKStretchyHeaderView.h */,
+				AC564EA9DA87539AC8111D9CA745FAA0 /* GSKStretchyHeaderView.m */,
+				1D41910461B9736DBB1C214D19FDF761 /* GSKStretchyHeaderView+Protected.h */,
+				954B133337AA514835DDF6C8E2AAB5C3 /* UIScrollView+GSKStretchyHeaderView.h */,
+				131A4E3582CC03F55AB25BF2D17D77B5 /* UIScrollView+GSKStretchyHeaderView.m */,
+				B18F48084CBA55C1556C38BFC38A060D /* UIView+GSKTransplantSubviews.h */,
+				3E490095471D802357A2365C3FEC6499 /* UIView+GSKTransplantSubviews.m */,
+				2D6081BBDD1CDF26E8E45248E3635679 /* Support Files */,
+			);
+			name = GSKStretchyHeaderView;
+			path = GSKStretchyHeaderView;
+			sourceTree = "<group>";
+		};
+		2D6081BBDD1CDF26E8E45248E3635679 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C2745B9B60DE2B77F1E34A6010161BC /* GSKStretchyHeaderView.modulemap */,
+				719BC2AA9B01EB2A9864A839AD3FDAAF /* GSKStretchyHeaderView.xcconfig */,
+				0861CB6024479E66F6BCF0C5DEABA6C3 /* GSKStretchyHeaderView-dummy.m */,
+				3B30EAB0FC94341CDE9126E495A49097 /* GSKStretchyHeaderView-prefix.pch */,
+				83252F20437A90481CE928E0F761A27F /* GSKStretchyHeaderView-umbrella.h */,
+				13AA469DD9566FAD9BB8A597680F33B1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GSKStretchyHeaderView";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0B36B676D1B001F2E4C5A28326F2AD09 /* Pods */,
+				0E2E54574D364ED27D95700535A67BAE /* Products */,
+				C113B70911DCDA390AE7B6048E616309 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C113B70911DCDA390AE7B6048E616309 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0857AFD4C13A22DBC0E3F7D3A1C4F7D2 /* Pods-ContactSearch */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D5C309E2BBC0A5D9FE7BFE9373AB56F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91416763D5245B2AE7EFE626717C2EC2 /* GSKGeometry.h in Headers */,
+				08954A613F688183FF6B887BB7CA65FE /* GSKStretchyHeaderView+Protected.h in Headers */,
+				4B79792D0632E31944DD9A054A27DCD8 /* GSKStretchyHeaderView-umbrella.h in Headers */,
+				1FA396080BDE3E9D7A6CEE7B1EE3DE2A /* GSKStretchyHeaderView.h in Headers */,
+				57D3672F8C1C3D3F673F16CD425F7CDC /* UIScrollView+GSKStretchyHeaderView.h in Headers */,
+				0E5478071AE5BB29EBD89B2E88600554 /* UIView+GSKTransplantSubviews.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAE319DE0F23EFDE376AA5D2EFB35387 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC9D3AD616D66E472FA0E24071695713 /* Pods-ContactSearch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B7203A78194A95B370E05CB18724045 /* Pods-ContactSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F388FA98E7DFCE7511F57C5C2DFBD21 /* Build configuration list for PBXNativeTarget "Pods-ContactSearch" */;
+			buildPhases = (
+				A7A66072558F5944F33785FB4C8FA124 /* Sources */,
+				41CD338DE78554591BDD2C26FB925F34 /* Frameworks */,
+				FAE319DE0F23EFDE376AA5D2EFB35387 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08FC1A82AC149A1370D762BB6A12BF99 /* PBXTargetDependency */,
+			);
+			name = "Pods-ContactSearch";
+			productName = "Pods-ContactSearch";
+			productReference = 8F59B42CD2C97E8CEF63721D277D6A00 /* Pods_ContactSearch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CD71ED72EACA0156F0B96DDE230F2138 /* GSKStretchyHeaderView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9419F17552F8673D1A2530A061D077EB /* Build configuration list for PBXNativeTarget "GSKStretchyHeaderView" */;
+			buildPhases = (
+				3EA4A8CE04D472A9E91013DF78EAFEE9 /* Sources */,
+				C05431C602AC130FC595EF06B8B76991 /* Frameworks */,
+				2D5C309E2BBC0A5D9FE7BFE9373AB56F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GSKStretchyHeaderView;
+			productName = GSKStretchyHeaderView;
+			productReference = 4B332F4CB82085D818D820A941033DDA /* GSKStretchyHeaderView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 0E2E54574D364ED27D95700535A67BAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD71ED72EACA0156F0B96DDE230F2138 /* GSKStretchyHeaderView */,
+				3B7203A78194A95B370E05CB18724045 /* Pods-ContactSearch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EA4A8CE04D472A9E91013DF78EAFEE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8730611B1ABD80B09DEE7C874B337252 /* GSKGeometry.c in Sources */,
+				5898FFC220ECBAC4DE5D237B4097B235 /* GSKStretchyHeaderView-dummy.m in Sources */,
+				CA051BA6064156586A246E57946B7108 /* GSKStretchyHeaderView.m in Sources */,
+				81B6B491A68487B0B7EDBCB00E3C0825 /* UIScrollView+GSKStretchyHeaderView.m in Sources */,
+				A82B3CC9980B706A2F0997C69020ECAA /* UIView+GSKTransplantSubviews.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7A66072558F5944F33785FB4C8FA124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C66F71EBDB6416BC9836415A90D2393 /* Pods-ContactSearch-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08FC1A82AC149A1370D762BB6A12BF99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GSKStretchyHeaderView;
+			target = CD71ED72EACA0156F0B96DDE230F2138 /* GSKStretchyHeaderView */;
+			targetProxy = E06A552D3D98433218B5AA4A557EC39E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A41B15D3AA834993ADDD808FA9D8764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49037170C7A6A414549311C54BDA3885 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719BC2AA9B01EB2A9864A839AD3FDAAF /* GSKStretchyHeaderView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GSKStretchyHeaderView/GSKStretchyHeaderView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GSKStretchyHeaderView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GSKStretchyHeaderView/GSKStretchyHeaderView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = GSKStretchyHeaderView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7D144F724433A09597E3476A57631255 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A8C5580C0EBDC457E6832F0E31016979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719BC2AA9B01EB2A9864A839AD3FDAAF /* GSKStretchyHeaderView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GSKStretchyHeaderView/GSKStretchyHeaderView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GSKStretchyHeaderView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GSKStretchyHeaderView/GSKStretchyHeaderView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = GSKStretchyHeaderView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D0A03CFD71A77CE1C5AD54E55D9A99D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBB71E0686E6D1798672AD2AA0DDFC5 /* Pods-ContactSearch.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ContactSearch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ContactSearch/Pods-ContactSearch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ContactSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DECAABDCE686F1DF194B27BEA352F0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE978A08E1D65333994EDD6A3D61E8FC /* Pods-ContactSearch.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ContactSearch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ContactSearch/Pods-ContactSearch.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ContactSearch;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D144F724433A09597E3476A57631255 /* Debug */,
+				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9419F17552F8673D1A2530A061D077EB /* Build configuration list for PBXNativeTarget "GSKStretchyHeaderView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49037170C7A6A414549311C54BDA3885 /* Debug */,
+				A8C5580C0EBDC457E6832F0E31016979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F388FA98E7DFCE7511F57C5C2DFBD21 /* Build configuration list for PBXNativeTarget "Pods-ContactSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DECAABDCE686F1DF194B27BEA352F0F9 /* Debug */,
+				D0A03CFD71A77CE1C5AD54E55D9A99D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
