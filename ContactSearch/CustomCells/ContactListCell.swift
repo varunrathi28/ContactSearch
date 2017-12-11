@@ -15,6 +15,9 @@ class ContactListCell: UITableViewCell {
     @IBOutlet weak var contactImageView:UIImageView!
     @IBOutlet weak var contactEmailLbl: UILabel!
     @IBOutlet weak var contactPhoneLbl: UILabel!
+    @IBOutlet weak var contactGenderCell:UILabel!
+    
+    var data:[String:Any]!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,6 +25,44 @@ class ContactListCell: UITableViewCell {
         contactImageView.layer.masksToBounds = true
         // Initialization code
     }
+    
+    // For using dic
+    
+    func updateCell (with hit:[String:Any]) {
+        
+        data = hit
+        
+        if let name = hit["name"] as? String {
+            
+            contactNameLbl.text = name
+        }
+        
+        if let email = hit["email"] as? String {
+         
+            contactEmailLbl.text = email
+        }
+        
+        if let phone = hit["phone"] as? String {
+            
+            contactPhoneLbl.text = phone
+        }
+        
+        if let index = hit["index"] as? Int {
+            
+            if  let image = UIImage(named: "\(index % 15)") {
+                
+                   contactImageView.image = image
+            }
+        }
+        
+        if let gender = hit["gender"] as? String {
+            contactGenderCell.text = gender
+        }
+        
+    }
+    
+    
+    // For using contacts
     
     func updateData(with contact:CNContact) {
         contactNameLbl.text = contact.givenName
@@ -63,6 +104,7 @@ class ContactListCell: UITableViewCell {
         contactImageView.image = nil
         contactEmailLbl.text = nil
         contactPhoneLbl.text = nil
+        contactGenderCell.text = nil
     }
 
 }

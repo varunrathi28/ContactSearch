@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2061EB66DBDA6A874671F178 /* Pods_ContactSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EFEF0E48D841551EA433CC0 /* Pods_ContactSearch.framework */; };
+		375F15911FDBE5F80029CA5D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 375F15901FDBE5F80029CA5D /* HeaderView.xib */; };
+		375F15931FDBE8D60029CA5D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F15921FDBE8D60029CA5D /* HeaderView.swift */; };
+		375F15951FDC3B540029CA5D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F15941FDC3B540029CA5D /* Extensions.swift */; };
+		375F15971FDE7E3C0029CA5D /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F15961FDE7E3C0029CA5D /* enums.swift */; };
 		37809D331FDBD919006EA1AB /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37809D321FDBD919006EA1AB /* ContactsManager.swift */; };
 		37CEDE681FDBBA5A00DE1C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CEDE671FDBBA5A00DE1C3D /* AppDelegate.swift */; };
 		37CEDE6A1FDBBA5A00DE1C3D /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CEDE691FDBBA5A00DE1C3D /* ContactsListViewController.swift */; };
@@ -30,6 +34,10 @@
 /* Begin PBXFileReference section */
 		0EFEF0E48D841551EA433CC0 /* Pods_ContactSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContactSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A56B7341E88BE5D3E37A33B /* Pods-ContactSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContactSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-ContactSearch/Pods-ContactSearch.release.xcconfig"; sourceTree = "<group>"; };
+		375F15901FDBE5F80029CA5D /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		375F15921FDBE8D60029CA5D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		375F15941FDC3B540029CA5D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		375F15961FDE7E3C0029CA5D /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
 		37809D321FDBD919006EA1AB /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
 		37CEDE641FDBBA5A00DE1C3D /* ContactSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CEDE671FDBBA5A00DE1C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		375F158F1FDBE5C80029CA5D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				375F15901FDBE5F80029CA5D /* HeaderView.xib */,
+				375F15921FDBE8D60029CA5D /* HeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		37CEDE5B1FDBBA5A00DE1C3D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +102,7 @@
 		37CEDE661FDBBA5A00DE1C3D /* ContactSearch */ = {
 			isa = PBXGroup;
 			children = (
+				375F158F1FDBE5C80029CA5D /* Views */,
 				37CEDE801FDBBB2A00DE1C3D /* Constants */,
 				37CEDE7F1FDBBB1D00DE1C3D /* CustomCells */,
 				37CEDE7E1FDBBB1000DE1C3D /* Helpers */,
@@ -123,6 +141,7 @@
 				37CEDE871FDBBB6F00DE1C3D /* Utility.swift */,
 				37CEDE891FDBBB7C00DE1C3D /* Protocols.swift */,
 				37809D321FDBD919006EA1AB /* ContactsManager.swift */,
+				375F15941FDC3B540029CA5D /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -143,6 +162,7 @@
 				37CEDE811FDBBB3F00DE1C3D /* StoryboardID.swift */,
 				37CEDE831FDBBB4E00DE1C3D /* AppTheme.swift */,
 				37CEDE851FDBBB5D00DE1C3D /* StringConstants.swift */,
+				375F15961FDE7E3C0029CA5D /* enums.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -227,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37CEDE751FDBBA5B00DE1C3D /* LaunchScreen.storyboard in Resources */,
+				375F15911FDBE5F80029CA5D /* HeaderView.xib in Resources */,
 				37CEDE721FDBBA5B00DE1C3D /* Assets.xcassets in Resources */,
 				37CEDE6D1FDBBA5A00DE1C3D /* Main.storyboard in Resources */,
 			);
@@ -297,6 +318,9 @@
 				37CEDE861FDBBB5D00DE1C3D /* StringConstants.swift in Sources */,
 				37CEDE681FDBBA5A00DE1C3D /* AppDelegate.swift in Sources */,
 				37CEDE821FDBBB3F00DE1C3D /* StoryboardID.swift in Sources */,
+				375F15931FDBE8D60029CA5D /* HeaderView.swift in Sources */,
+				375F15971FDE7E3C0029CA5D /* enums.swift in Sources */,
+				375F15951FDC3B540029CA5D /* Extensions.swift in Sources */,
 				37CEDE8E1FDBBBC900DE1C3D /* DetailViewController.swift in Sources */,
 				37CEDE941FDBBC0600DE1C3D /* ContactImageCell.swift in Sources */,
 				37CEDE841FDBBB4E00DE1C3D /* AppTheme.swift in Sources */,

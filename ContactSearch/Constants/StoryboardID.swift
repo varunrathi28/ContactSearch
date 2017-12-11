@@ -12,6 +12,8 @@ struct  CellIdentifier {
     static let ContactCell = "ContactCell"
     static let ContactDetailCell = "ContactDetailCell"
     static let ContactDpCell = "ContactDPCell"
+    
+   
 }
 
 struct StoryboardID {

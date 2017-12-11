@@ -4,7 +4,22 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AlgoliaSearch-Client-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>GSKStretchyHeaderView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>InstantSearch-Core-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>InstantSearch-iOS.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -16,6 +31,32 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>04A3AF748D7EE7AFDFCD97B6B1C32AA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7AF9DB6D12362A8B4DB41BCD17AD98B2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AB6E42879BB2D0C5A7C49B8B5ABA7B1C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CD71ED72EACA0156F0B96DDE230F2138</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E46A1A8953FD354E7293E8870F4B06DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

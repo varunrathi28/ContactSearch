@@ -19,6 +19,11 @@ class ContactDetailCell: UITableViewCell {
        
         // Initialization code
     }
+    
+    func updateCellDetail(with data:CellData) {
+        lblDetailTitle.text = data.category.toString()
+        lblDetaiDesciption.text = data.detail
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -26,4 +31,10 @@ class ContactDetailCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        lblDetailTitle.text = ""
+        lblDetaiDesciption.text = ""
+    }
+    
 }

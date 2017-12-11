@@ -12,4 +12,7 @@ struct AppTheme {
     
     static let backgroundColor:UIColor = UIColor.lightGray
     
+    static let ImageCount:Int = 15
+    
+    static let BackgroundCount:Int = 13
 }

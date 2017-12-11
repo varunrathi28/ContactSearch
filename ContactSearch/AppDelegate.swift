@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import InstantSearch
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        InstantSearch.shared.configure(appID: Auth.kAPPId, apiKey: Auth.kAPIKey, index: Auth.kIndex)
+        InstantSearch.shared.params.attributesToRetrieve = ["name","company","email","phone","address","gender","age","index","_id"]
+        InstantSearch.shared.params.attributesToHighlight = ["name","email","phone"]
         // Override point for customization after application launch.
         return true
     }

@@ -9,20 +9,26 @@
 import UIKit
 import Contacts
 import CoreData
+import AlgoliaSearch
+import InstantSearch
 
-class ContactsListViewController: UIViewController {
+class ContactsListViewController: HitsTableViewController {
     
-    @IBOutlet weak var tableView:UITableView!
+    @IBOutlet weak var tableView:HitsTableWidget!
     @IBOutlet weak var textField:UITextField!
     
+    var client:Client!
     var arrDataSource:[CNContact] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+       
         tableView.estimatedRowHeight = 44
         tableView.rowHeight = UITableViewAutomaticDimension
         
+         hitsTableView = tableView
+        InstantSearch.shared.registerAllWidgets(in: self.view)
+       // configure()
         // Do any additional setup after loading the view.
     }
     
@@ -30,7 +36,7 @@ class ContactsListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        fetchContacts()
+      //  fetchContacts()
     }
     
     override func didReceiveMemoryWarning() {
@@ -38,6 +44,37 @@ class ContactsListViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func configure()
+    {
+        
+      let searchBar = SearchBarWidget(frame: .zero)
+        
+        
+        let stats = StatsLabelWidget(frame: .zero)
+        
+        self.view.addSubview(searchBar)
+        self.view.addSubview(stats)
+        
+        // Add autolayout constraints
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        stats.translatesAutoresizingMaskIntoConstraints = false
+        
+        let views = ["searchBar": searchBar, "stats": stats]
+        var constraints = [NSLayoutConstraint]()
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "V:|-64-[searchBar]-10-[stats]", options: [], metrics: nil, views:views)
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-2-[searchBar]-2-|", options: [], metrics: nil, views:views)
+        constraints += NSLayoutConstraint.constraints(withVisualFormat: "H:|-2-[stats]-2-|", options: [], metrics: nil, views:views)
+        NSLayoutConstraint.activate(constraints)
+        
+        // Style the stats label
+        stats.textAlignment = .center
+        stats.font = UIFont.boldSystemFont(ofSize:18.0)
+        
+        
+        // Load all objects in the JSON file into an index named "contacts".
+     
+        
+    }
    
     func fetchContacts()
     {
@@ -69,7 +106,34 @@ class ContactsListViewController: UIViewController {
         
     }
     
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath, containing hit: [String : Any]) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.ContactCell , for: indexPath) as! ContactListCell
+
+        // For using contacts from phone
+/*
+        let contact = arrDataSource[indexPath.row]
+        cell.updateData(with: contact)
+        */
+        
+        cell.updateCell(with: hit)
+        return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath, containing hit: [String : Any]) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: StoryboardID.ContactDetailVC) as! DetailViewController
+        vc.data = hit
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
+
+
+
+/*
 
 extension ContactsListViewController : UITableViewDataSource {
     
@@ -102,6 +166,8 @@ extension ContactsListViewController : UITableViewDelegate {
         
     }
 }
+ 
+ */
 
 extension ContactsListViewController:ContactProtocol {
     
@@ -122,7 +188,7 @@ extension ContactsListViewController : UITextFieldDelegate {
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
-        let input = textField.text + string
+        let input = textField.text! + string
         
         
         
