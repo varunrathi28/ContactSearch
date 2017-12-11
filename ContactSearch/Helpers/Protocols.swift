@@ -15,8 +15,6 @@ protocol ContactProtocol {
     func didFetchedContacts(contacts :[CNContact])
 }
 
-
-
 protocol Searchable {
     /// A list of strings that should be indexed.
     var searchableStrings: [String] { get }

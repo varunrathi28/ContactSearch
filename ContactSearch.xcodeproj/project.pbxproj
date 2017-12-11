@@ -12,6 +12,7 @@
 		375F15931FDBE8D60029CA5D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F15921FDBE8D60029CA5D /* HeaderView.swift */; };
 		375F15951FDC3B540029CA5D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F15941FDC3B540029CA5D /* Extensions.swift */; };
 		375F15971FDE7E3C0029CA5D /* enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 375F15961FDE7E3C0029CA5D /* enums.swift */; };
+		377D27251FDEBB3400903813 /* ImagePreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377D27241FDEBB3400903813 /* ImagePreviewController.swift */; };
 		37809D331FDBD919006EA1AB /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37809D321FDBD919006EA1AB /* ContactsManager.swift */; };
 		37CEDE681FDBBA5A00DE1C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CEDE671FDBBA5A00DE1C3D /* AppDelegate.swift */; };
 		37CEDE6A1FDBBA5A00DE1C3D /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CEDE691FDBBA5A00DE1C3D /* ContactsListViewController.swift */; };
@@ -38,6 +39,7 @@
 		375F15921FDBE8D60029CA5D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		375F15941FDC3B540029CA5D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		375F15961FDE7E3C0029CA5D /* enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enums.swift; sourceTree = "<group>"; };
+		377D27241FDEBB3400903813 /* ImagePreviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreviewController.swift; sourceTree = "<group>"; };
 		37809D321FDBD919006EA1AB /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
 		37CEDE641FDBBA5A00DE1C3D /* ContactSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37CEDE671FDBBA5A00DE1C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 				37CEDE691FDBBA5A00DE1C3D /* ContactsListViewController.swift */,
 				37CEDE8B1FDBBBC100DE1C3D /* AddContactViewController.swift */,
 				37CEDE8D1FDBBBC900DE1C3D /* DetailViewController.swift */,
+				377D27241FDEBB3400903813 /* ImagePreviewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				37CEDE921FDBBBF000DE1C3D /* ContactDetailCell.swift in Sources */,
 				37809D331FDBD919006EA1AB /* ContactsManager.swift in Sources */,
 				37CEDE861FDBBB5D00DE1C3D /* StringConstants.swift in Sources */,
+				377D27251FDEBB3400903813 /* ImagePreviewController.swift in Sources */,
 				37CEDE681FDBBA5A00DE1C3D /* AppDelegate.swift in Sources */,
 				37CEDE821FDBBB3F00DE1C3D /* StoryboardID.swift in Sources */,
 				375F15931FDBE8D60029CA5D /* HeaderView.swift in Sources */,
@@ -463,8 +467,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
+				DEVELOPMENT_TEAM = N672L2V5B7;
 				INFOPLIST_FILE = ContactSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrat28.ContactSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -479,8 +484,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5XUW2EJ8TL;
+				DEVELOPMENT_TEAM = N672L2V5B7;
 				INFOPLIST_FILE = ContactSearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vrat28.ContactSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";

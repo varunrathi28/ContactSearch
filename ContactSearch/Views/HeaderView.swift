@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import GSKStretchyHeaderView
 
-class HeaderView: GSKStretchyHeaderView {
+
+class HeaderView: UIView {
 
     @IBOutlet weak var imageBackground:UIImageView!
     @IBOutlet weak var imageProfile:UIImageView!

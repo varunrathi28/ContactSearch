@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import GSKStretchyHeaderView
+
 
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var tableView:UITableView!
     var arrDatasource:[CellData] = []
-    
     var data:[String:Any] = [:] {
         
         didSet {
@@ -21,14 +20,15 @@ class DetailViewController: UIViewController {
             self.configureData()
         }
     }
-    var headerView:HeaderView!
+    
+    var isRegisteredFor3DTouch:Bool = false
+    var headerImageView:UIImageView?
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.estimatedRowHeight = 70
         tableView.rowHeight = UITableViewAutomaticDimension
 
-    //    loadHeaderView()
         // Do any additional setup after loading the view.
     }
     
@@ -37,14 +37,7 @@ class DetailViewController: UIViewController {
         tableView.reloadData()
     }
     
-    func loadHeaderView()
-    {
-        let nibs = Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)
-        
-        self.headerView = nibs?.first as! HeaderView
-        self.headerView.stretchDelegate = self as? GSKStretchyHeaderViewStretchDelegate
-        self.tableView.addSubview(self.headerView)
-    }
+   
 
     
     func configureData()
@@ -126,6 +119,19 @@ extension DetailViewController: UITableViewDataSource {
         if indexPath.row == 0 {
           let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.ContactDpCell, for: indexPath) as! ContactImageCell
             cell.updateData(data: data)
+            
+            if !isRegisteredFor3DTouch {
+                
+              
+                   headerImageView = cell.profileImageView
+                
+               if traitCollection.forceTouchCapability == .available {
+               
+                registerForPreviewing(with: self, sourceView: headerImageView!)
+                 isRegisteredFor3DTouch = true
+                }
+            }
+            
             return cell
         }
         
@@ -142,8 +148,42 @@ extension DetailViewController: UITableViewDataSource {
     
 }
 
-extension DetailViewController:UITableViewDelegate {
+
+extension DetailViewController:UIViewControllerPreviewingDelegate {
     
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController)
+    {
+        // Present or push the view controller
+        present(viewControllerToCommit, animated: true)
+    }
+    
+    func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+        
+        guard let indexpath = tableView.indexPathForRow(at: location) else { return nil}
+   
+        guard let cell =  tableView.cellForRow(at: indexpath) as? ContactImageCell else { return nil }
+        
+        
+        let convertedLocation = view.convert(location, to: headerImageView!)
+        if (headerImageView?.bounds.contains(convertedLocation))!
+        {
+            // Init the peek view controller, set relevant properties, and return it
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            
+            let imagePreview = storyboard.instantiateViewController(withIdentifier:StoryboardID.ImageVC) as? ImagePreviewController
+            imagePreview?.imageView.image = headerImageView!.image
+          //  imagePreview.sourceRect = headerImageView!.frame
+            
+            previewingContext.sourceRect = cell.profileImageView.frame
+            return imagePreview
+        }
+        else
+        {
+            return nil
+        }
+        
+    }
   
 }
 

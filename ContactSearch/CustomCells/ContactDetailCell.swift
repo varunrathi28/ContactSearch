@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ContactDetailCell: UITableViewCell {
     
     @IBOutlet weak var lblDetailTitle:UILabel!
@@ -16,6 +18,7 @@ class ContactDetailCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+     
        
         // Initialization code
     }
@@ -37,4 +40,16 @@ class ContactDetailCell: UITableViewCell {
         lblDetaiDesciption.text = ""
     }
     
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            if #available(iOS 9.0, *) {
+                if traitCollection.forceTouchCapability == UIForceTouchCapability.available {
+                    // 3D Touch capable
+                    
+                    let force = touch.force/touch.maximumPossibleForce
+                }
+            }
+        }
+    }
 }

@@ -7,7 +7,7 @@ target 'ContactSearch' do
 
   # Pods for ContactSearch
 
-pod 'GSKStretchyHeaderView'
+pod 'Popover'
 pod 'AlgoliaSearch-Client-Swift', '~> 4.8.1'
 pod 'InstantSearch-iOS', '~> 1.0.0'
 

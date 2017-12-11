@@ -15,7 +15,7 @@ import InstantSearch
 class ContactsListViewController: HitsTableViewController {
     
     @IBOutlet weak var tableView:HitsTableWidget!
-    @IBOutlet weak var textField:UITextField!
+    @IBOutlet weak var searchBar:SearchBarWidget!
     
     var client:Client!
     var arrDataSource:[CNContact] = []
@@ -123,12 +123,18 @@ class ContactsListViewController: HitsTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath, containing hit: [String : Any]) {
         
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: StoryboardID.ContactDetailVC) as! DetailViewController
         vc.data = hit
         navigationController?.pushViewController(vc, animated: true)
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+    }
+       
+        
 }
 
 
@@ -155,19 +161,11 @@ extension ContactsListViewController : UITableViewDataSource {
     }
     
 }
-extension ContactsListViewController : UITableViewDelegate {
-    
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: StoryboardID.ContactDetailVC)
-        navigationController?.pushViewController(vc, animated: true)
-        
-    }
-}
  
  */
+
+ 
+
 
 extension ContactsListViewController:ContactProtocol {
     
@@ -184,14 +182,17 @@ extension ContactsListViewController:ContactProtocol {
     }
 }
 
-extension ContactsListViewController : UITextFieldDelegate {
+
+
+
+extension ContactsListViewController : UISearchBarDelegate {
     
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+    func searchBarShouldEndEditing(_ searchBar: UISearchBar) -> Bool {
+        return true
         
-        let input = textField.text! + string
-        
-        
-        
-       return true
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
     }
 }
